@@ -1,8 +1,8 @@
 # bhekor/laravel-opay
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/bhekor/laravel-opay.svg)](https://packagist.org/packages/bhekor/laravel-opay)
-[![Total Downloads](https://img.shields.io/packagist/dt/bhekor/laravel-opay.svg)](https://packagist.org/packages/bhekor/laravel-opay)
-[![License](https://img.shields.io/packagist/l/bhekor/laravel-opay.svg)](LICENSE.md)
+[![Latest Version on Packagist](https://poser.pugx.org/bhekor/laravel-opay/v)](https://packagist.org/packages/bhekor/laravel-opay)
+[![Total Downloads](https://poser.pugx.org/bhekor/laravel-opay/downloads)](https://packagist.org/packages/bhekor/laravel-opay)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 [![GitHub Stars](https://img.shields.io/github/stars/bhekor/laravel-opay.svg?style=social)](https://github.com/bhekor/laravel-opay)
 
 Reusable Laravel package for [OPay Checkout](https://documentation.opaycheckout.com/) APIs.
