@@ -84,31 +84,6 @@ $callback = Opay::webhooks()->parse($request->all());
 
 See [MERCHANT_ONBOARDING.md](MERCHANT_ONBOARDING.md) for go-live checklist.
 
-## Publishing updates to Packagist
-
-The package source of truth is [bhekor/laravel-opay on GitHub](https://github.com/bhekor/laravel-opay). To publish it on Packagist:
-
-1. Push this repository to GitHub and make sure the default branch contains `composer.json`, this README, and `LICENSE.md`.
-2. Sign in to [Packagist](https://packagist.org/) and create an account if needed.
-3. Choose **Submit** and enter `https://github.com/bhekor/laravel-opay`.
-4. If prompted, configure the Packagist GitHub Service Hook/webhook for the repository so Packagist refreshes automatically after pushes and tags.
-5. Create and push the initial version tag `v1.0.0`, then publish a GitHub release for the same tag. Packagist imports it as the stable Composer version `1.0.0`.
-
-For later releases, update the package code and changelog/README as needed, commit and push, then create and push the next version tag. Do not add a `version` field to `composer.json`; Composer derives releases from VCS tags. Before tagging, check the package metadata with:
-
-```bash
-composer validate --strict
-```
-
-Consumers can then install a stable release with `composer require bhekor/laravel-opay` or pin a release with `composer require bhekor/laravel-opay:^1.0`.
-
-### Before the first public release
-
-- Confirm the GitHub repository is public and the repository URL, owner, and package name are correct.
-- Start the public release history at `v1.0.0` and confirm the package API is ready for a stable release.
-- Review the included license, README links, and credentials/examples; never publish real merchant keys.
-- Ensure the version tag points to the commit you intend to release. Tags should be immutable; make a new version for corrections.
-
 ## Tests
 
 ```bash
