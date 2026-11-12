@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+>
+    <testsuites>
+        <testsuite name="Package Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="OPAY_BASE_URL" value="https://testapi.opaycheckout.com"/>
+        <env name="OPAY_MERCHANT_ID" value="test-merchant-id"/>
+        <env name="OPAY_PUBLIC_KEY" value="OPAYPUB_TEST"/>
+        <env name="OPAY_SECRET_KEY" value="OPAYPRV_TEST_SECRET"/>
+    </php>
+</phpunit>

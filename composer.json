@@ -1,0 +1,67 @@
+{
+    "name": "bhekor/laravel-opay",
+    "description": "A Laravel package for integrating OPay Checkout payment APIs",
+    "keywords": [
+        "laravel",
+        "opay",
+        "payment",
+        "gateway",
+        "nigeria",
+        "cashier",
+        "wallet"
+    ],
+    "homepage": "https://github.com/bhekor/laravel-opay",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ibidapo Adeolu",
+            "email": "adeoluibidapo@gmail.com",
+            "homepage": "https://github.com/bhekor",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/bhekor/laravel-opay/issues",
+        "source": "https://github.com/bhekor/laravel-opay"
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bhekor\\LaravelOpay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bhekor\\LaravelOpay\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bhekor\\LaravelOpay\\LaravelOpayServiceProvider"
+            ],
+            "aliases": {
+                "Opay": "Bhekor\\LaravelOpay\\Facades\\Opay"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
